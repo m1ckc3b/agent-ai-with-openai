@@ -6,11 +6,6 @@ const openai = new OpenAI({
   dangerouslyAllowBrowser: true
 })
 
-const availableFunctions = {
-  getCurrentWeather,
-  getLocation
-}
-
 async function agent(query: string): Promise<string> {
   const messages = [
     { role: "system", content: `You are a helpful AI agent. Give highly specific answers based on the information you're provided. 
