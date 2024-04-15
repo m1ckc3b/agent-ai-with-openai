@@ -1,4 +1,3 @@
-import type { Location } from "./types"
 
 export async function getCurrentWeather({ location }) {
   const weather = {
